@@ -1,203 +1,191 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-<meta content="Word.Document" name="ProgId"/>
-<meta content="Microsoft Word 15" name="Generator"/>
-<meta content="Microsoft Word 15" name="Originator"/>
-<link href="img/filelist.xml" rel="File-List"/>
+  <link rel="icon" type="image/png" href="https://imgur.com/a/S9ebx2J">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Earthbot Wiki</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: #f4f6f8;
+      color: #212529;
+      margin: 0;
+    }
 
-<!--[if !mso]>
-<style>
-v\:* {behavior:url(#default#VML);}
-o\:* {behavior:url(#default#VML);}
-w\:* {behavior:url(#default#VML);}
-.shape {behavior:url(#default#VML);}
-</style>
-<![endif]-->
-<link href="img/themedata.thmx" rel="themeData"/>
-<link href="img/colorschememapping.xml" rel="colorSchemeMapping"/>
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
 
+    nav {
+      background-color: #34495e;
+      padding: 10px;
+      text-align: center;
+    }
 
-<style>
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* Dark gradient background */
-    background: linear-gradient(to bottom, #1e1e1e, #121212);
-    color: #e0e0e0;
-    line-height: 1.6;
-    padding: 2em;
-    max-width: 900px;
-    margin: auto;
-  }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-  h1, h2, h3, h4, h5, h6 {
-    color: #ffffff;
-    border-bottom: 1px solid #333333;
-    margin-top: 2em;
-  }
+    nav a:hover {
+      text-decoration: underline;
+    }
 
-  a {
-    color: #8ab4f8;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
+    main {
+      max-width: 960px;
+      margin: auto;
+      padding: 30px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
 
-  table {
-    border-collapse: collapse;
-    width: 100%;
-    /* Dark table background */
-    background-color: #1f1f1f;
-    margin-top: 1em;
-  }
-  th, td {
-    border: 1px solid #444444;
-    padding: 0.5em;
-    color: #e0e0e0;
-  }
-  th {
-    /* Slightly lighter header */
-    background-color: #2a2a2a;
-  }
+    section {
+      margin-bottom: 50px;
+    }
 
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-</style>
+    h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 8px;
+      color: #2c3e50;
+    }
 
+    ul, ol {
+      padding-left: 20px;
+    }
+
+    code {
+      background-color: #e9ecef;
+      padding: 2px 5px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+
+    .color-guide {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 10px;
+      max-width: 500px;
+      margin-top: 15px;
+    }
+
+    .color-box {
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 4px;
+      color: white;
+    }
+
+    .red { background-color: #e74c3c; }
+    .purple { background-color: #9b59b6; }
+    .blue { background-color: #3498db; }
+    .green { background-color: #2ecc71; }
+    .white { background-color: #bdc3c7; color: #2c3e50; }
+
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #7f8c8d;
+      margin: 30px 0;
+    }
+  </style>
 </head>
-<body lang="EN-US" link="#467886" style="tab-interval:.5in;
-word-wrap:break-word" vlink="#96607D">
-<div class="WordSection1">
-<p class="MsoNormal"><!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600"
- o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
- stroked="f">
- <v:stroke joinstyle="miter"/>
- <v:formulas>
-  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
-  <v:f eqn="sum @0 1 0"/>
-  <v:f eqn="sum 0 0 @1"/>
-  <v:f eqn="prod @2 1 2"/>
-  <v:f eqn="prod @3 21600 pixelWidth"/>
-  <v:f eqn="prod @3 21600 pixelHeight"/>
-  <v:f eqn="sum @0 0 1"/>
-  <v:f eqn="prod @6 1 2"/>
-  <v:f eqn="prod @7 21600 pixelWidth"/>
-  <v:f eqn="sum @8 21600 0"/>
-  <v:f eqn="prod @7 21600 pixelHeight"/>
-  <v:f eqn="sum @10 21600 0"/>
- </v:formulas>
- <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
- <o:lock v:ext="edit" aspectratio="t"/>
-</v:shapetype><v:shape id="_x0000_s1027" type="#_x0000_t75" alt="A red stamp with black text&#10;&#10;AI-generated content may be incorrect."
- style='position:absolute;margin-left:322.1pt;margin-top:-45.2pt;width:161pt;
- height:112.7pt;rotation:1750211fd;z-index:251660288;visibility:visible;
- mso-wrap-style:square;mso-width-percent:0;mso-height-percent:0;
- mso-wrap-distance-left:9pt;mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
- mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;
- mso-position-horizontal-relative:margin;mso-position-vertical:absolute;
- mso-position-vertical-relative:text;mso-width-percent:0;mso-height-percent:0;
- mso-width-relative:page;mso-height-relative:page'>
- <v:imagedata src="img/image001.png" o:title="A red stamp with black text&#10;&#10;AI-generated content may be incorrect"/>
- <w:wrap anchorx="margin"/>
-</v:shape><![endif]--><?if !vml?><span><span style="position:absolute;left:407px;
-top:-101px;width:260px;height:232px"><img height="232" src="img/topsecret1.png" v:shapes="_x0000_s1027" width="260"/></span></span><?endif?><span><!--[if gte vml 1]><v:shape
- id="Picture_x0020_3" o:spid="_x0000_i1064" type="#_x0000_t75" style='width:115.5pt;
- height:106.5pt;visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="img/image003.png" o:title=""/>
-</v:shape><![endif]--><?if !vml?><img height="142" src="img/earthchan.png" v:shapes="Picture_x0020_3" width="154"/><?endif?></span><b><span style="font-size:48.0pt;line-height:115%">EARTH BOT</span></b><span style="font-size:48.0pt;line-height:115%"> </span></p>
-<p class="MsoNormal" style="margin-left:2.5in;text-indent:.5in">V 1.0</p>
-<p class="MsoNormal">First, upon opening the Earth Bot it will ask for the license
-key, the key will be provided to you directly, copy and paste it into the
-terminal and press ENTER</p>
-<p class="MsoNormal"><span><!--[if gte vml 1]><v:shape
- id="_x0000_i1063" type="#_x0000_t75" style='width:468pt;height:34.5pt;
- visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="img/image005.png" o:title=""/>
-</v:shape><![endif]--><?if !vml?><img height="46" src="img/2.png" v:shapes="_x0000_i1063" width="624"/><?endif?></span></p>
-<p class="MsoNormal"><span><!--[if gte vml 1]><v:shape
- id="_x0000_i1062" type="#_x0000_t75" style='width:468pt;height:36pt;
- visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="img/image007.png" o:title=""/>
-</v:shape><![endif]--><?if !vml?><img height="48" src="img/3.png" v:shapes="_x0000_i1062" width="624"/><?endif?></span></p>
-<p class="MsoNormal">Once you press ENTER the program will verity the key and
-give you access, now you need to set a macro, is the movement the mouse will do
-when you execute the program, you have to setup a good macro otherwise the bot
-could fail to stop the mouse movements on time, a good macro means not moving
-the mouse too fast or too slow, just move the mouse as if you were going to
-reset the commander normally, you can add a small pause at the end to increase
-the probability of the bot working as expected.</p>
+<body>
 
-<h1>VIDEO TUTORIAL - MUST WATCH TO USE THE BOT</h1>
-<h2>
-<a href="https://youtu.be/TP6FDhfiNJQ" target="_blank" rel="noopener">https://youtu.be/TP6FDhfiNJQM</a>
-</h2>
+<header>
+  <h1>Earthbot Wiki</h1>
+  <p>Official Documentation for Installation, Usage, and Reference</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#installation">Installation</a>
+  <a href="#usage">Usage</a>
+</nav>
+
+<main>
+
+  <section id="about">
+    <h2>About Earthbot</h2>
+    <p><strong>Earthbot</strong> is an automation tool (bot) that assists users by recording and repeating mouse movements based on visual triggers like color changes on screen. It's ideal for tasks involving repetitive scanning, selection, or rerolling.</p>
+    <p>It detects target stats based on a color rating system and acts accordingly to stop or repeat actions. Once configured, Earthbot can operate hands-free, with support for pause/resume hotkeys.</p>
     
-<p class="MsoNormal">Now to record the macro just select the terminal whilst on
-top of the game, then press ENTER and move the mouse as if you were resetting
-the commander stats, once youre done press ESC and the macro will be recorded.</p>
-<p class="MsoNormal"><span><!--[if gte vml 1]><v:shape
- id="_x0000_i1028" type="#_x0000_t75" alt="A screenshot of a video game&#10;&#10;AI-generated content may be incorrect."
- style='width:467.25pt;height:321pt;visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="img/image011.gif" o:title="A screenshot of a video game&#10;&#10;AI-generated content may be incorrect"/>
-</v:shape><![endif]--><?if !vml?><img border="0" height="428" src="img/4.gif" v:shapes="_x0000_i1028" width="623"/><?endif?></span></p>
-<p class="MsoNormal">Then you will need to tell the program which stat are you
-looking for, it could be perfect, excellent, good, ok and bad, this is
-represented by the colors of them shown on the game, so we all want the best
-stat which is 5, so that is red, so you would place the word red on the
-terminal and press enter. </p>
-<p class="MsoNormal"><span><!--[if gte vml 1]><v:shape
- id="_x0000_i1027" type="#_x0000_t75" style='width:468pt;height:38.25pt;
- visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="img/image012.png" o:title=""/>
-</v:shape><![endif]--><?if !vml?><img border="0" height="51" src="img/5.png" v:shapes="_x0000_i1027" width="624"/><?endif?></span></p>
-<p class="MsoNormal">Once this is done now you need to define the areas that it
-will monitor, meaning the amount of stats it will be checking for, for example
-if want to have 5 on two stats, you would have 2 areas, so you place 2 on the
-terminal, if you only want to check for one stats then you place 1 on the
-terminal.</p>
-<p class="MsoNormal"><span><!--[if gte vml 1]><v:shape
- id="Picture_x0020_1" o:spid="_x0000_i1026" type="#_x0000_t75" style='width:468pt;
- height:28.5pt;visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="img/image014.png" o:title=""/>
-</v:shape><![endif]--><?if !vml?><img border="0" height="38" src="img/6.png" v:shapes="Picture_x0020_1" width="624"/><?endif?></span></p>
-<p class="MsoNormal">Moving on you need to define the areas on the screen, just
-place the terminal on top of the game and move the mouse to the left top corner
-of the stat area, then press ENTER then move it to the bottom corner and press
-ENTER, this will highlight the area that you selected, do this for all the number
-of areas you selected.</p>
-<p class="MsoNormal"><span><!--[if gte vml 1]><v:shape
- id="Picture_x0020_2" o:spid="_x0000_i1025" type="#_x0000_t75" alt="A screenshot of a video game&#10;&#10;AI-generated content may be incorrect."
- style='width:467.25pt;height:321pt;visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="img/image016.gif" o:title="A screenshot of a video game&#10;&#10;AI-generated content may be incorrect"/>
-</v:shape><![endif]--><?if !vml?><img border="0" height="428" src="img/7.gif" v:shapes="Picture_x0020_2" width="623"/><?endif?></span></p>
-<p class="MsoNormal">Lastly the program will ask for the speed you want to play
-the macro, basically the speed it will reset a commander, place the number 3
-for the fastest number of resets per minute, once done just press enter and the
-bot will start to reset the commander until you get 5 on all the stats you
-selected.</p>
-<p class="MsoNormal">You must repeat this for every commander you want to reset,
-the macro however only needs to be recorded once, so make sure its a good one.</p>
-<p class="MsoNormal"><o:p> </o:p></p>
-<p class="MsoNormal"><!--[if gte vml 1]><v:shape id="Picture_x0020_1" o:spid="_x0000_s1026"
- type="#_x0000_t75" alt="A red stamp with black text&#10;&#10;AI-generated content may be incorrect."
- style='position:absolute;margin-left:99pt;margin-top:165.8pt;width:227.1pt;
- height:159pt;z-index:251658240;visibility:visible;mso-wrap-style:square;
- mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:9pt;
- mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
- mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;
- mso-position-horizontal-relative:text;mso-position-vertical:absolute;
- mso-position-vertical-relative:text;mso-width-percent:0;mso-height-percent:0;
- mso-width-relative:page;mso-height-relative:page'>
- <v:imagedata src="img/image017.png" o:title="A red stamp with black text&#10;&#10;AI-generated content may be incorrect"/>
- <w:wrap type="square"/>
-</v:shape><![endif]--><?if !vml?><img align="left" height="212" hspace="12" src="img/topsecret2.png" v:shapes="Picture_x0020_1" width="303"/><?endif?><b><u><span style="font-size:24.0pt;
-line-height:115%;color:#EE0000">You are not allowed to distribute or share the
-Earth Bot in any way, doing so will get your license suspended and you will lose
-access to the Bot.</span></u></b> <b><u><span style="font-size:24.0pt;
-line-height:115%;color:#EE0000"><o:p></o:p></span></u></b></p>
-</div>
+    <h3>Color Detection Chart</h3>
+    <div class="color-guide">
+      <div class="color-box red">RED</div> <div>Stat: <strong>5.0</strong></div>
+      <div class="color-box purple">PURPLE</div> <div>Stat: <strong>4.7–4.9</strong></div>
+      <div class="color-box blue">BLUE</div> <div>Stat: <strong>4.0–4.6</strong></div>
+      <div class="color-box green">GREEN</div> <div>Stat: <strong>3.0–3.9</strong></div>
+      <div class="color-box white">WHITE</div> <div>Stat: <strong>1.0–2.9</strong></div>
+    </div>
+
+    <p><strong>Target Match Example:</strong> You can configure Earthbot to stop when both Accuracy and Speed are <code>GREEN</code>, or more optimal (e.g., <code>RED + PURPLE</code>).</p>
+  
+</section>
+  <section id="video-tutorial" style="border: 3px solid #2980b9; background: #ecf6fd; padding: 25px; border-radius: 8px; margin-bottom: 50px;">
+    <h2 style="color: #2980b9;">Video Tutorial</h2>
+    <p>Prefer watching instead of reading? Here's a complete walkthrough on how to set up and use Earthbot step by step:</p>
+
+    <div style="text-align: center; margin-top: 20px;">
+      <iframe width="720" height="405" src="https://www.youtube.com/embed/wTjPN_YBYJk" 
+        title="Earthbot Tutorial" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+
+  </section>
+  <section id="installation">
+    <h2>Installation</h2>
+    <ol>
+      <li>Download the Earthbot ZIP file from the official link provided.</li>
+      <li>Extract the contents to any folder on your PC.</li>
+      <li>Double-click the executable file (<code>Earthbot.exe</code>) to launch.</li>
+      <li>On first launch, input your provided <strong>license key</strong> and click <code>Check</code>.</li>
+      <li>The bot will start faster on future launches.</li>
+    </ol>
+  </section>
+
+  <section id="usage">
+    <h2>Usage</h2>
+    <ol>
+      <li><strong>Record a Macro:</strong>
+        <ul>
+          <li>Click <code>Record Macro</code>.</li>
+          <li>Move your mouse into position when prompted.</li>
+          <li>Perform your desired actions.</li>
+          <li>Press <code>ESC</code> to finish recording.</li>
+        </ul>
+      </li>
+      <li><strong>Define Target Regions:</strong>
+        <ul>
+          <li>Choose how many stats you want to check (e.g., 2 for Speed + Accuracy).</li>
+          <li>Click <code>Select Regions</code>.</li>
+          <li>Hover over an area and press <code>R</code> twice to define each region.</li>
+        </ul>
+      </li>
+      <li><strong>Select Target Color:</strong> Choose your desired stat threshold color (e.g., <code>Green</code> or <code>Red+Purple</code>).</li>
+      <li><strong>Start Playback:</strong> Click <code>Start</code> and the bot will begin operating.</li>
+      <li><strong>Bot Control:</strong>
+        <ul>
+          <li><code>F12</code> — Pause or Resume the bot.</li>
+          <li><code>ESC</code> — Stop the bot immediately.</li>
+        </ul>
+      </li>
+      <li>You can rerun Earthbot with the same settings without redefining macros or regions.</li>
+    </ol>
+
+    <p><strong>Tip:</strong> License and macro only need to be configured once unless the folder is deleted or reset.</p>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2025 Earthbot Project | <a href="https://github.com/AllanHTML5/EarthBotWiki">GitHub</a>
+</footer>
+
 </body>
 </html>
