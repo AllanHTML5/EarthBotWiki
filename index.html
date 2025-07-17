@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" type="image/png" href="https://imgur.com/a/S9ebx2J">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Earthbot Wiki</title>
-  <style>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     body {
       font-family: 'Segoe UI', Tahoma, sans-serif;
-      background: #f4f6f8;
-      color: #212529;
+      background: #121212;
+      color: #e0e0e0;
       margin: 0;
     }
 
+    a {
+      color: #64b5f6;
+    }
+
     header {
-      background-color: #2c3e50;
-      color: white;
+      background-color: #1e1e1e;
+      color: #ffffff;
       padding: 20px;
       text-align: center;
     }
 
     nav {
-      background-color: #34495e;
+      background-color: #2a2a2a;
       padding: 10px;
       text-align: center;
     }
 
     nav a {
-      color: white;
+      color: #e0e0e0;
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
@@ -41,8 +44,8 @@
       max-width: 960px;
       margin: auto;
       padding: 30px;
-      background-color: #ffffff;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      background-color: #1c1c1c;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
     }
 
     section {
@@ -50,9 +53,9 @@
     }
 
     h2 {
-      border-bottom: 2px solid #ddd;
+      border-bottom: 2px solid #333;
       padding-bottom: 8px;
-      color: #2c3e50;
+      color: #90caf9;
     }
 
     ul, ol {
@@ -60,10 +63,11 @@
     }
 
     code {
-      background-color: #e9ecef;
-      padding: 2px 5px;
+      background-color: #333;
+      color: #fff;
+      padding: 2px 6px;
       border-radius: 4px;
-      font-family: monospace;
+      font-family: Consolas, monospace;
     }
 
     .color-guide {
@@ -87,11 +91,40 @@
     .green { background-color: #2ecc71; }
     .white { background-color: #bdc3c7; color: #2c3e50; }
 
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
     footer {
       text-align: center;
       font-size: 0.9em;
-      color: #7f8c8d;
+      color: #888;
       margin: 30px 0;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        font-size: 16px;
+      }
+
+      nav a {
+        display: block;
+        margin: 8px 0;
+      }
     }
   </style>
 </head>
@@ -114,7 +147,7 @@
     <h2>About Earthbot</h2>
     <p><strong>Earthbot</strong> is an automation tool (bot) that assists users by recording and repeating mouse movements based on visual triggers like color changes on screen. It's ideal for tasks involving repetitive scanning, selection, or rerolling.</p>
     <p>It detects target stats based on a color rating system and acts accordingly to stop or repeat actions. Once configured, Earthbot can operate hands-free, with support for pause/resume hotkeys.</p>
-    
+
     <h3>Color Detection Chart</h3>
     <div class="color-guide">
       <div class="color-box red">RED</div> <div>Stat: <strong>5.0</strong></div>
@@ -125,19 +158,16 @@
     </div>
 
     <p><strong>Target Match Example:</strong> You can configure Earthbot to stop when both Accuracy and Speed are <code>GREEN</code>, or more optimal (e.g., <code>RED + PURPLE</code>).</p>
-  
-</section>
-  <section id="video-tutorial" style="border: 3px solid #2980b9; background: #ecf6fd; padding: 25px; border-radius: 8px; margin-bottom: 50px;">
-    <h2 style="color: #2980b9;">Video Tutorial</h2>
-    <p>Prefer watching instead of reading? Here's a complete walkthrough on how to set up and use Earthbot step by step:</p>
-
-    <div style="text-align: center; margin-top: 20px;">
-      <iframe width="720" height="405" src="https://www.youtube.com/embed/wTjPN_YBYJk" 
-        title="Earthbot Tutorial" frameborder="0" allowfullscreen></iframe>
-    </div>
-
-
   </section>
+
+  <section id="video-tutorial" style="border: 2px solid #1976d2; background: #1e2a38; padding: 25px; border-radius: 8px;">
+    <h2>📺 Video Tutorial</h2>
+    <p>Prefer watching instead of reading? Here's a complete walkthrough on how to set up and use Earthbot step by step:</p>
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/wTjPN_YBYJk" title="Earthbot Tutorial" allowfullscreen></iframe>
+    </div>
+  </section>
+
   <section id="installation">
     <h2>Installation</h2>
     <ol>
